@@ -30,7 +30,7 @@ lines.append(line)
 x_arg = '//span[contains(@title,'+ target +')]'
 group_title = wait.until(EC.presence_of_element_located((By.XPATH, x_arg)))
 group_title.click()
-inp_xpath = '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[2]'
+inp_xpath = '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]'
 input_box = wait.until(EC.presence_of_element_located((By.XPATH, inp_xpath)))
 for word in lines:
     input_box.send_keys(word+ Keys.ENTER)
