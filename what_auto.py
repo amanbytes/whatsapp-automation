@@ -20,7 +20,7 @@ number_of_times=10 #No. of times to send a message
 contact_path='//span[contains(@title,'+ target +')]'
 contact=wait.until(EC.presence_of_element_located((By.XPATH,contact_path)))
 contact.click()
-message_box_path='//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[2]'
+message_box_path='//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]'
 message_box=wait.until(EC.presence_of_element_located((By.XPATH,message_box_path)))
 for x in range(number_of_times):
     message_box.send_keys(message + Keys.ENTER)
